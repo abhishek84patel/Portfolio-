@@ -1,146 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 :root {
-    --yellow: #F5C32C;
-    --orange: #FCA61F;
-    --black: #242D49;
-    --gray: #788097;
-    --blueCard: #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-    --white: #ffff;
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --white: #ffff;
 }
 
-
 .con {
-    width: 90%;
-    max-width: 78.125rem;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 78.125rem;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25rem 0;
-    align-items: center;
-    font-size: 1.25rem;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  align-items: center;
+  font-size: 1.25rem;
 }
 
-header>nav>ul {
-    display: flex;
-    gap: 2rem;
+header > nav > ul {
+  display: flex;
+  gap: 2rem;
 }
 
-ul>li {
-    list-style: none;
-
+ul > li {
+  list-style: none;
 }
 
-ul>li:hover {
-    color: var(--orange);
-    cursor: pointer;
+ul > li:hover {
+  color: var(--orange);
+  cursor: pointer;
 }
 
 button {
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    /* padding: 11px 26px 11px 26px; */
-    width: 6rem;
-    height: 2rem;
-
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  /* padding: 11px 26px 11px 26px; */
+  width: 6rem;
+  height: 2rem;
 }
 
 button:hover {
-    background: white;
-    cursor: pointer;
-    border: 1px solid var(--orange);
-    color: var(--orange);
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  color: var(--orange);
 }
 
 .n-name {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* into css will start */
 
-
-
-
-
-.intro {
-
-    /* height: clamp(500px, 77vh, 800px); */
-    min-height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
-    justify-items: center;
-    padding: 100px 0;
+/* 
+.left {
+  flex: 1;
+} */
+.left-container {
+  padding: 1rem;
 }
+/* .right {
+  flex: 1;
+  direction: rtl;
+} */
 
+/* .right img {
+  width: 100%;
+  max-width: 400px;
+} */
 
 .i-name {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
 }
 
 .i-name :nth-child(1) {
-    font-size: 28px;
-
+  font-size: 28px;
 }
 
 .i-name :nth-child(2) {
-    font-size: 3rem;
-    color: var(--orange);
-
+  font-size: 3rem;
+  color: var(--orange);
 }
 
 .i-name :nth-child(3) {
-    font-weight: 100;
-    font-size: 14px;
-    color: var(--gray);
-    margin-top: 10px;
-    line-height: 22px;
-
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 10px;
+  line-height: 22px;
 }
 
 /* icon css start */
 
-
-.i-icons{
-    display: flex;
-    gap: 40px;
-    margin-top: 50px;
-}
-.i-icons img{
-    width: 35px;
-    padding: 5px;
-    border-radius: 10px;
+.i-icons {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
 }
 
-.i-icons>*:hover {
-    cursor: pointer;
-    border: 1px solid var(--orange);
+.i-icons img {
+  width: 35px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-.right {
+.i-icons > *:hover {
+  cursor: pointer;
+  border: 1px solid var(--orange);
+}
+
+/* .right {
     position: relative;
     width: 100%;
 
@@ -150,7 +143,7 @@ button:hover {
 .img1 {
     z-index: 1;
     width: 60%;
-    object-fit: contain;
+
     position: relative;
     top: -15px;
 }
@@ -165,26 +158,80 @@ button:hover {
 .fv {
     padding-left: 0;
 }
-@media screen and ( max-width:768px) and (min-width:500px) {
-   
-    .intro{
+
+@media screen and (max-width:768px) and (min-width:500px) {
+
+    .intro {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 60px;
     }
+
     header>nav>ul {
         display: none;
     }
 }
-@media screen and (max-width:500px){
-    .intro{
-      padding: 50px 25px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+@media screen and (max-width:500px) {
+    .intro {
+        padding: 50px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     header>nav>ul {
         display: none;
     }
+} */
+
+/* here is my code */
+
+.intro {
+  /* height: clamp(500px, 77vh, 800px); */
+  min-height: 600px;
+  /* justify-content: center; */
+  display: grid;
+  /* place-items: center; */
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+}
+.right-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.right-container > img {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.right-container .img1 {
+  /* i did relative this one cause of there will be no height when goes to mobile view because the all will be absolute */
+  position: relative;
+  z-index: 1;
+  top: 50.5%;
+}
+.right-container .fv {
+  top: 48%;
+  left: 60%;
+}
+
+@media (width<1000px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .right-container .img1 {
+    top: 47%;
+  }
 }
