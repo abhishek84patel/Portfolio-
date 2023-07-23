@@ -1,7 +1,7 @@
 const menu = document.getElementById("nav");
 const m_icon = document.getElementById("m-img");
-console.log(menu)
 
+// it is called normal and anynomus function
 function showMenu() {
     
 
@@ -9,3 +9,10 @@ function showMenu() {
 
 
 }
+// its a arrow function
+let downloadfile =()=> {
+    let f=document.getElementById("file").click();
+    console.log(f)
+    alert(f)
+   
+};
